@@ -1,0 +1,91 @@
+2024-08-14T22:15:09.099Z - error
+ - Cannot parse file content: 2024-08-14T22:17:06.454Z - error
+ - Cannot parse file content: 2024-08-14T22:17:07.862Z - error
+ - Cannot parse file content: 2024-08-14T22:20:01.462Z - error
+ - Cannot parse file content: 2024-08-14T22:20:02.985Z - error
+ - Cannot parse file content: 2024-08-14T22:20:03.434Z - error
+ - Cannot parse file content: 2024-08-14T22:53:27.183Z - error
+ - Cannot parse file content: 2024-08-14T22:53:27.998Z - error
+ - Cannot parse file content: 2024-08-14T22:53:29.870Z - error
+ - Cannot parse file content: 2024-08-14T22:53:31.520Z - error
+ - Cannot parse file content: 2024-08-14T22:53:35.726Z - error
+ - Cannot parse file content: 2024-08-14T22:53:36.743Z - error
+ - Cannot parse file content: 2024-08-14T22:53:40.744Z - error
+ - Cannot parse file content: 2024-08-14T22:53:41.178Z - error
+ - Cannot parse file content: 2024-08-14T22:53:41.497Z - error
+ - Cannot parse file content: 2024-08-14T22:53:42.570Z - error
+ - Cannot parse file content: 2024-08-14T22:53:46.362Z - error
+ - Cannot parse file content: 2024-08-14T22:53:54.341Z - error
+ - Cannot parse file content: 2024-08-14T22:55:14.678Z - error
+ - Cannot parse file content: 2024-08-14T22:55:19.351Z - error
+ - Cannot parse file content: 2024-08-14T22:55:19.904Z - error
+ - Cannot parse file content: 2024-08-14T22:55:21.102Z - error
+ - Cannot parse file content: 2024-08-14T22:55:27.904Z - error
+ - Cannot parse file content: 2024-08-14T22:55:28.173Z - error
+ - Cannot parse file content: 2024-08-14T22:55:30.903Z - error
+ - Cannot parse file content: 2024-08-14T22:55:31.503Z - error
+ - Cannot parse file content: 2024-08-14T22:55:33.471Z - error
+ - Cannot parse file content: 2024-08-14T22:55:33.902Z - error
+ - Cannot parse file content: 2024-08-14T22:55:34.218Z - error
+ - Cannot parse file content: 2024-08-14T22:55:34.892Z - error
+ - Cannot parse file content: 2024-08-14T22:55:38.612Z - error
+ - Cannot parse file content: 2024-08-14T22:55:39.873Z - error
+ - Cannot parse file content: 2024-08-14T22:55:40.195Z - error
+ - Cannot parse file content: 2024-08-14T22:55:41.126Z - error
+ - Cannot parse file content: 2024-08-14T22:55:41.819Z - error
+ - Cannot parse file content: 2024-08-14T22:55:43.027Z - error
+ - Cannot parse file content: 2024-08-14T22:55:59.031Z - error
+ - Cannot parse file content: 2024-08-14T22:56:02.340Z - error
+ - Cannot parse file content: 2024-08-14T22:56:03.247Z - error
+ - Cannot parse file content: 2024-08-14T22:56:07.658Z - error
+ - Cannot parse file content: 2024-08-14T22:56:11.909Z - error
+ - Cannot parse file content: 2024-08-14T22:56:16.312Z - error
+ - Cannot parse file content: 2024-08-14T23:01:45.495Z - error
+ - Cannot parse file content: 2024-08-14T23:02:01.865Z - error
+ - Cannot parse file content: 2024-08-14T23:02:20.823Z - error
+ - Cannot parse file content: 2024-08-14T23:02:26.500Z - error
+ - Cannot parse file content: 2024-08-14T23:02:29.082Z - error
+ - Cannot parse file content: 2024-08-14T23:03:35.173Z - error
+ - Cannot parse file content: 2024-08-14T23:04:07.866Z - error
+ - Cannot parse file content: 2024-08-14T23:04:44.856Z - error
+ - Cannot parse file content: 2024-08-14T23:04:54.590Z - error
+ - Cannot parse file content: 2024-08-14T23:04:58.668Z - error
+ - Cannot parse file content: 2024-08-14T23:05:41.483Z - error
+ - Cannot parse file content: 2024-08-14T23:05:41.982Z - error
+ - Cannot parse file content: 2024-08-14T23:05:42.320Z - error
+ - Cannot parse file content: 2024-08-14T23:05:45.797Z - error
+ - Cannot parse file content: 2024-08-14T23:05:53.345Z - error
+ - Cannot parse file content: 2024-08-14T23:05:54.429Z - error
+ - Cannot parse file content: 2024-08-14T23:05:55.288Z - error
+ - Cannot parse file content: 2024-08-15T00:26:25.817Z - Generate Tests from code_lens: api in lib/api.ts
+ - 2024-08-15T00:26:46.899Z - Profiler GenerateTests in BE - 17690 ms
+ - 2024-08-15T00:26:49.594Z - Import removed: "import { api } from './path-to-your-api-file';"
+ - 2024-08-15T00:26:49.601Z - Import removed: "import fetch from 'node-fetch';"
+ - 2024-08-15T00:26:50.955Z - Profiler Refine code-solve imports - 2830 ms
+ - 2024-08-15T00:26:52.163Z - Profiler Refine code-preen tests - 1207 ms
+ - 2024-08-15T00:26:55.595Z - Profiler Refine code-organize imports - 3432 ms
+ - 2024-08-15T00:26:57.593Z - Profiler Refine code-remove unused declarations - 1997 ms
+ - 2024-08-15T00:26:58.841Z - Profiler Refine code-Validation report-getUnitTests - 1246 ms
+ - 2024-08-15T00:27:01.261Z - Profiler TestValidatorService-validateTestsByCode - 2420 ms
+ - 2024-08-15T00:27:01.262Z - Profiler Refine code-Validation report-getGreyTest - 2421 ms
+ - 2024-08-15T00:27:03.153Z - Profiler TestValidatorService-validateTestsByCode - 1891 ms
+ - 2024-08-15T00:27:03.157Z - Profiler Refine code-Validation report-getGreenOrRedTests - 1894 ms
+ - 2024-08-15T00:27:03.157Z - Profiler Refine code-Validation report-getDescribeStatusAndErrors - 0 ms
+ - 2024-08-15T00:27:03.157Z - Profiler Refine code-Validation report - 5563 ms
+ - 2024-08-15T00:27:03.158Z - Profiler Refine code - 16256 ms
+ - 2024-08-15T00:27:03.158Z - Verification summary for method "api": Describe error 0, Grey: 0, Red: 0, Green: 0, NA: 5
+ - 2024-08-15T00:27:04.426Z - Profiler Test file creation - 1268 ms
+ - 2024-08-15T00:27:04.427Z - Profiler Add Prompt - 0 ms
+ - 2024-08-15T00:27:06.637Z - Profiler Format - 2210 ms
+ - 2024-08-15T00:27:08.853Z - Profiler Save metrics - 2214 ms
+ - 2024-08-15T00:27:08.855Z - End Generate Tests done: function api in lib/api.ts. Duration: 40812ms.
+ - 2024-08-15T00:29:24.359Z - error
+ - Cannot parse file content: 2024-08-15T00:29:24.367Z - error
+ - Cannot parse file content: 2024-08-15T00:29:24.648Z - error
+ - Cannot parse file content: 2024-08-15T00:29:24.652Z - error
+ - Cannot parse file content: 2024-08-15T00:29:25.750Z - error
+ - Cannot parse file content: 2024-08-15T00:29:26.870Z - error
+ - Cannot parse file content: 2024-08-15T00:29:26.873Z - error
+ - Cannot parse file content: 2024-08-15T00:29:30.994Z - error
+ - Cannot parse file content: 2024-08-15T00:29:31.002Z - error
+ - Cannot parse file content: 
