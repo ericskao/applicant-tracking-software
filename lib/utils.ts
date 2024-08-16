@@ -10,5 +10,6 @@ export function filterJobs(jobs: JobInterface[]) {
   if (!Array.isArray(jobs)) {
     return [];
   }
+  return jobs;
   return jobs.filter((job) => job.name.includes('Sample'));
 }

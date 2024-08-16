@@ -15,8 +15,6 @@ const Jobs = async () => {
       {jobs && (
         <ul>
           {filterJobs(jobs).map((job) => {
-            // console.log('departments', job.departments);
-            // console.log('offices', job.offices);
             return (
               <Link href={`/jobs/${job.id}`} key={job.id}>
                 <div>{job.name}</div>
