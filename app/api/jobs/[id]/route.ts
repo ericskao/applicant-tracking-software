@@ -36,5 +36,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: 'Error', error }, { status: 400 });
   }
 
-  return NextResponse.json({ message: 'Application submitted successfully' });
+  return NextResponse.json(
+    { message: 'Application submitted successfully', error: null },
+    { status: 201 }
+  );
 }

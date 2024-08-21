@@ -16,6 +16,7 @@ export async function api(
   options: RequestInit = {},
   showHeaders?: boolean
 ): Promise<unknown> {
+  console.log('auth token', AUTH_TOKEN);
   try {
     await new Promise((resolve) => setTimeout(resolve, 3000));
     const response = await fetch(`${BASE_URL}${route}`, {
