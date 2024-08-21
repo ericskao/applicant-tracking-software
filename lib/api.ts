@@ -16,7 +16,6 @@ export async function api(
   options: RequestInit = {},
   showHeaders?: boolean
 ): Promise<unknown> {
-  console.log('auth token', AUTH_TOKEN);
   try {
     const response = await fetch(`${BASE_URL}${route}`, {
       ...options,
@@ -24,7 +23,6 @@ export async function api(
     });
 
     if (response.ok && !showHeaders) {
-      console.log('response', response);
       return await response.json();
     } else if (response.ok && showHeaders) {
       return {
