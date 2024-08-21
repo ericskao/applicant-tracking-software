@@ -24,6 +24,7 @@ export async function api(
     });
 
     if (response.ok && !showHeaders) {
+      console.log('response', response);
       return await response.json();
     } else if (response.ok && showHeaders) {
       return {
