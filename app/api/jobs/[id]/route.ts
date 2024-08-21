@@ -33,6 +33,7 @@ export async function POST(request: Request) {
     // create application
   } catch (error) {
     console.log(error);
+    return NextResponse.json({ message: 'Error', error }, { status: 400 });
   }
 
   return NextResponse.json({ message: 'Application submitted successfully' });
