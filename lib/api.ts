@@ -28,6 +28,7 @@ export async function api(
     } else if (response.ok && showHeaders) {
       return {
         headers: response.headers,
+        cache: 'no-cache',
         data: (await response.json()) as unknown,
       };
     }
