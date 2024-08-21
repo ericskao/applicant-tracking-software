@@ -6,7 +6,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'My Dashboard | ATS',
+  title: 'Lorem Ipsum ATS',
   description: 'Manage your applications and jobs',
 };
 
