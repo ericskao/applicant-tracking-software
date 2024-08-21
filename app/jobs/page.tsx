@@ -1,28 +1,28 @@
 'use server';
 
-import { api } from '@/lib/api';
-import { filterJobs } from '@/lib/utils';
-import Link from 'next/link';
-import { JobInterface } from './types';
+import JobList from '@/components/features/job/JobList';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Suspense } from 'react';
 
-// to-do write test for filter job if it contains Founding Engineer
-
-const Jobs = async () => {
-  const jobs = (await api('/jobs')) as JobInterface[];
+const Jobs = () => {
   return (
-    <main>
-      <div>Latest jobs near you</div>
-      {jobs && (
-        <ul>
-          {filterJobs(jobs).map((job) => {
-            return (
-              <Link href={`/jobs/${job.id}`} key={job.id}>
-                <div>{job.name}</div>
-              </Link>
-            );
-          })}
-        </ul>
-      )}
+    <main className="bg-backgroundDarker px-4 py-8">
+      <div className="max-w-[640px] mx-auto">
+        <h1 className="text-4xl font-semibold text-center pb-10">
+          Job Openings
+        </h1>
+        <Suspense
+          fallback={
+            <div className="min-h-screen overflow-y-hidden max-w-[640px] flex flex-col gap-y-2">
+              {Array.from(Array(10)).map((_, i) => (
+                <Skeleton key={i} className="w-full h-[40px] my-4" />
+              ))}
+            </div>
+          }
+        >
+          <JobList />
+        </Suspense>
+      </div>
     </main>
   );
 };

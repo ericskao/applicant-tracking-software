@@ -11,7 +11,7 @@ const menuLinkClassName =
 
 const TopNav = () => {
   return (
-    <NavigationMenu className="p-4 sticky">
+    <NavigationMenu className="p-4 sticky border-b">
       <NavigationMenuList className="gap-x-6">
         <NavigationMenuItem>
           <Link href="/jobs" legacyBehavior passHref>
@@ -24,13 +24,6 @@ const TopNav = () => {
           <Link href="/applications" legacyBehavior passHref>
             <NavigationMenuLink className={menuLinkClassName}>
               Applications
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/admin" legacyBehavior passHref>
-            <NavigationMenuLink className={menuLinkClassName}>
-              Admin
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

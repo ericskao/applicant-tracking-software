@@ -23,3 +23,34 @@ export interface JobInterface {
     };
   };
 }
+
+export interface ApplicationInterface {
+  id: number;
+  jobs: {
+    id: number;
+    name: string;
+  }[];
+  candidate_id: number;
+  status: string;
+  current_stage: {
+    id: number;
+    name: string;
+  };
+  updated_at: string;
+}
+
+export interface CandidateInterface {
+  id: number;
+  first_name: string;
+  last_name: string;
+  email_addresses: [
+    {
+      value: string;
+    }
+  ];
+  phone_numbers: {
+    value: string;
+  }[];
+  created_at: string;
+  updated_at: string;
+}

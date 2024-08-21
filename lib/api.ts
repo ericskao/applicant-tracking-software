@@ -6,19 +6,32 @@ const headers = {
   'Content-Type': 'application/json',
 };
 
+export interface ResponseWithHeadersInterface {
+  headers: Headers;
+  data: unknown[];
+}
+
 export async function api(
   route: string,
-  options: RequestInit = {}
+  options: RequestInit = {},
+  showHeaders?: boolean
 ): Promise<unknown> {
   try {
     await new Promise((resolve) => setTimeout(resolve, 3000));
     const response = await fetch(`${BASE_URL}${route}`, {
       ...options,
+      cache: 'no-cache',
+
       headers: { ...headers, ...options.headers },
     });
 
-    if (response.ok) {
+    if (response.ok && !showHeaders) {
       return await response.json();
+    } else if (response.ok && showHeaders) {
+      return {
+        headers: response.headers,
+        data: (await response.json()) as unknown,
+      };
     }
   } catch (error) {
     console.error(`Error fetching from ${BASE_URL}${route}:`, error);

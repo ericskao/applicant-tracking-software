@@ -4,7 +4,7 @@ import { JobInterface } from '@/app/jobs/types';
 import { Button } from '@/components/ui/button';
 import { Dispatch, SetStateAction } from 'react';
 
-const JOB_DESCRIPTION_DATA = [{}];
+export const JOB_CONTENT_VIEW_CLASSNAME = 'mx-auto text-left max-w-[640px]';
 
 const JobDescription = ({
   job,
@@ -14,8 +14,8 @@ const JobDescription = ({
   setViewState: Dispatch<SetStateAction<'overview' | 'application'>>;
 }) => {
   return (
-    <section className="mx-auto text-left max-w-[640px]">
-      <h2>Description</h2>
+    <section className={JOB_CONTENT_VIEW_CLASSNAME}>
+      <h2 className="text-xl font-semibold mb-2">Description</h2>
       <div className="flex flex-col gap-y-4">
         <p>
           Lorem Ipsum is a multidisciplinary firm specializing in the planning,
@@ -29,7 +29,13 @@ const JobDescription = ({
           and providing a positive experience for our customers.
         </p>
       </div>
-      <div>
+      <h2 className="text-xl font-semibold mb-2 mt-6">Key Responsibilities</h2>
+      <ul className="list-disc">
+        <li>Be a team player</li>
+        <li>Be a problem solver</li>
+        <li>Help build a positive and inclusive work culture.</li>
+      </ul>
+      <div className="mt-6">
         <Button
           onClick={() => setViewState('application')}
           variant="default"
