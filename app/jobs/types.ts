@@ -53,4 +53,5 @@ export interface CandidateInterface {
   }[];
   created_at: string;
   updated_at: string;
+  attachments: { filename: string; url: string }[];
 }
