@@ -1,3 +1,5 @@
+import 'server only';
+
 const BASE_URL = 'https://harvest.greenhouse.io/v1';
 const AUTH_TOKEN = process.env.GREEN_HOUSE_API_KEY;
 
@@ -5,8 +7,6 @@ const headers = {
   Authorization: `Basic ${btoa(AUTH_TOKEN + ':')}`,
   'Content-Type': 'application/json',
 };
-
-console.log('HEADERS', headers);
 
 export interface ResponseWithHeadersInterface {
   headers: Headers;
@@ -20,15 +20,8 @@ export async function api(
 ): Promise<unknown> {
   console.log('auth token', AUTH_TOKEN);
   try {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-    console.log('TEST', {
-      ...headers,
-      ...options.headers,
-    });
     const response = await fetch(`${BASE_URL}${route}`, {
       ...options,
-      cache: 'no-cache',
-
       headers: { ...headers, ...options.headers },
     });
 
