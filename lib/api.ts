@@ -1,5 +1,3 @@
-import 'server-only';
-
 const BASE_URL = 'https://harvest.greenhouse.io/v1';
 const AUTH_TOKEN = process.env.GREEN_HOUSE_API_KEY;
 
