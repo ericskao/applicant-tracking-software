@@ -6,6 +6,8 @@ const headers = {
   'Content-Type': 'application/json',
 };
 
+console.log('HEADERS', headers);
+
 export interface ResponseWithHeadersInterface {
   headers: Headers;
   data: unknown[];
@@ -19,6 +21,10 @@ export async function api(
   console.log('auth token', AUTH_TOKEN);
   try {
     await new Promise((resolve) => setTimeout(resolve, 3000));
+    console.log('TEST', {
+      ...headers,
+      ...options.headers,
+    });
     const response = await fetch(`${BASE_URL}${route}`, {
       ...options,
       cache: 'no-cache',
